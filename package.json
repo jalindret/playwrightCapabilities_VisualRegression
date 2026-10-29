@@ -1,0 +1,36 @@
+{
+  "name": "playwright-capabilities-visualregression",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "app": "vite --host 127.0.0.1",
+    "test": "node scripts/run.mjs",
+    "test:update": "node scripts/run.mjs --update-snapshots",
+    "test:ui": "node scripts/run.mjs --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "demo:regression": "node scripts/regression.mjs",
+    "demo:serve": "vite docs --config docs/vite.config.mjs --host 127.0.0.1 --port 4173",
+    "demo:check": "node scripts/check-demo.mjs"
+  },
+  "dependencies": {
+    "@backtrace/react": "0.5.1",
+    "@fortawesome/fontawesome-svg-core": "6.7.2",
+    "@fortawesome/free-solid-svg-icons": "6.7.2",
+    "@fortawesome/react-fontawesome": "3.3.1",
+    "@react-pdf/renderer": "4.5.1",
+    "js-cookie": "3.0.8",
+    "prop-types": "15.8.1",
+    "react": "18.3.1",
+    "react-burger-menu": "3.0.9",
+    "react-dom": "18.3.1",
+    "react-router-dom": "7.18.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "@types/node": "22.19.0",
+    "@vitejs/plugin-react": "5.1.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}
